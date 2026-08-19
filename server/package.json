@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
+    "prestart": "node dist/seed.js",
     "start": "node dist/index.js",
     "seed": "ts-node-dev --transpile-only src/seed.ts"
   },
